@@ -1,22 +1,22 @@
 print(" -----------------------------------------------------------------------------------")
 
-while True:  # ciclo while que evita que el programa continúe si el dato es incorrecto
+while True:  # ciclo while sirve para que el programa no coninue hasta que ingrese dato correcto
     try:
         cantidad = int(input("bienvenido al sistema de notas institucionales:\ndigita la cantidad de estudiantes\n"))
-        if cantidad > 0:
+        if cantidad > 0:#si la cantidad es mayor a 0 puede continuar
             break
         else:
-            print("ingresa un número mayor que 0")
-    except ValueError:
+            print("ingresa un número mayor que 0")#si no ingresa un numero mayor a 0
+    except ValueError:#sirve para que cuando ingrese un dato no valido 
         print("por favor inserta un número válido")
 
-for i in range(cantidad):
+for i in range(cantidad):# for es para un ciclo el cual sabemos que tiene un fin, i es la variable que va a ir aumentando de acuerdo a la cantidad
     print("estudiante", i+1)
 
-    while True:
-        nombre = input("|  ingresa el nombre del estudiante:  |\n").strip()
-        if nombre.isalpha():
-            break
+    while True:#ciclo infinito que funciona siempre y cuando sea verdadero
+        nombre = input("|  ingresa el nombre del estudiante:  |\n").strip()#strip sirve para que desaparezcan los espacios en la enrada
+        if nombre.isalpha():#sivre para validar si un dato tiene texto
+            break#detiene ciclo que esta,para continua con el for
         else:
             print("|  por favor inserta datos validos  |")
 
