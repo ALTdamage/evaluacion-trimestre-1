@@ -13,7 +13,7 @@ while True:  # ciclo while sirve para que el programa no coninue hasta que ingre
 for i in range(cantidad):# for es para un ciclo el cual sabemos que tiene un fin, i es la variable que va a ir aumentando de acuerdo a la cantidad
     print("estudiante", i+1)
 
-    while True:#ciclo infinito que funciona siempre y cuando sea verdadero
+    while True:#ciclo infinito que funciona siempre y cuando sea verdadero,dato booleano
         nombre = input("|  ingresa el nombre del estudiante:  |\n").strip()#strip sirve para que desaparezcan los espacios en la enrada
         if nombre.isalpha():#sivre para validar si un dato tiene texto
             break#detiene ciclo que esta,para continua con el for
